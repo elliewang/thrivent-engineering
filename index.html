@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#173e36">
+    <title>Northstar | Wealth Engineering Workspace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <aside class="sidebar"><a class="brand" href="#overview"><span class="brand-icon">✦</span> Northstar<span
+                class="brand-sub">WEALTH ENGINEERING</span></a>
+        <p class="nav-label">WORKSPACE</p>
+        <nav aria-label="Main navigation"><a href="#overview">◫ &nbsp; Overview</a><a href="#accounts">◉ &nbsp; Accounts
+                & portfolios</a><a href="#delivery">▤ &nbsp; Delivery roadmap</a><a href="#operations">⌁ &nbsp; Service
+                health</a><a href="#team">◎ &nbsp; Team & standards</a><a href="#architecture">⌘ &nbsp; Architecture</a>
+        </nav>
+        <div class="side-bottom"><span class="live-dot"></span> Local demo workspace<p>Prepared for Wenting
+                Wang<br>Thrivent role exploration</p><button id="reset" class="ghost">Reset demo data</button></div>
+    </aside>
+    <main>
+        <header>
+            <div><span class="eyebrow">ENGINEERING LEADERSHIP / DEMO</span>
+                <h1 id="page-title">Portfolio command center</h1>
+            </div><button class="primary" id="ask-open">✦ Ask workspace assistant</button>
+        </header>
+        <div class="notice">Independent interview demonstration · Synthetic data only · Not affiliated with Thrivent ·
+            No live financial services</div>
+        <div id="view"></div>
+        <footer>Northstar demonstrates product partnership, operational ownership, and responsible automation. Values
+            are simulated snapshots, not market data.</footer>
+    </main>
+    <section class="chat" id="chat" aria-label="Workspace assistant" hidden>
+        <div class="chat-head">
+            <div><strong>✦ Workspace assistant</strong><small>Local, rules-based demo · No external AI</small></div>
+            <button id="chat-close" aria-label="Close assistant">×</button>
+        </div>
+        <div class="messages" id="messages" role="log" aria-live="polite">
+            <div class="bubble assistant">I can summarize this workspace, look up synthetic accounts, explain
+                architecture, and draft an incident update. Each answer names its source. I cannot execute financial
+                transactions.</div>
+        </div>
+        <div class="prompts"><button data-prompt="What needs my attention?">What needs attention?</button><button
+                data-prompt="Explain architecture">Explain architecture</button><button
+                data-prompt="Draft incident update">Draft incident update</button></div>
+        <form id="chat-form"><label class="sr" for="question">Ask a question</label><input id="question"
+                autocomplete="off" placeholder="Ask about accounts, risks, or delivery…" maxlength="500"><button
+                class="primary" aria-label="Send message">↑</button></form>
+    </section>
+    <div id="toast" role="status"></div>
+    <script src="engine.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
